@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-size: 1.2rem;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: rgba(transparent, 0.1);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: whitesmoke;
+}
+
+//ABSTRACT
+@import "./abstract/variables.scss";
+@import "./abstract/typography.scss";
+
+//COMPONENT
+@import "./components/card.scss";
+@import "./components/button.scss";
+
+//PAGES
+@import "./pages/employee-list.scss";
+@import "./pages/employee-detail.scss";

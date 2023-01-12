@@ -1,0 +1,33 @@
+@import "../abstract//variables.scss";
+
+.employee-detail {
+  &__actions {
+    padding: 1rem;
+  }
+
+  &__content {
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    &__picture {
+      border-radius: 0.5rem;
+      width: 11rem;
+      height: 11rem;
+    }
+    &__detail {
+      padding-right: 0.5rem;
+      padding-top: 0.2rem;
+      &__personal-info {
+        &__item {
+          &:not(:last-child) {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

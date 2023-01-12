@@ -1,0 +1,60 @@
+@import "../abstract/variables.scss";
+
+.card {
+  display: flex;
+  border-radius: 0.5rem;
+  height: 5rem;
+  width: 100%;
+  min-width: 45rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  background-color:white;
+
+  &__vote-count {
+    width: 2rem;
+    border-right: 1px solid rgba(transparent, 0.2);
+    text-align: center;
+    line-height: 5rem;
+  }
+  &__content {
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    &__picture {
+      border-radius: 0.5rem;
+      width: 3rem;
+      height: 3rem;
+    }
+    &__detail {
+      display: flex;
+      width: 100%;
+      padding-right: 0.5rem;
+      padding-top: 0.2rem;
+
+      &__personal-info {
+        display: flex;
+        gap: 2rem;
+        &__item {
+          min-width: 12rem;
+          &--title {
+            line-height: 1.2rem;
+            font-size: 0.9rem;
+            color:$color-secondary;
+            font-weight: bold;
+          }
+          &--value {
+            line-height: 1.3rem;
+          }
+        }
+      }
+      &__actions {
+        display: flex;
+        gap: 0.5rem;
+        margin-left: auto;
+      }
+    }
+  }
+}
